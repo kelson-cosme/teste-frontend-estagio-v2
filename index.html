@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilo.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    
+    
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
+    <title>Teste</title>
+</head>
+<body>
+    <header><img src="/img/aiko.png" alt=""></header>
+
+    <div class="corpo">
+        <div id="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+      
+        <div  id="opcoes" class="opcoes" name="time">
+            <h2>Equipamento</h1>
+            <p value="0" onclick="m1(), clicar()">CA-0001</p>
+            <p value="1" onclick="m2(), clicar()">CA-0002</p>
+            <p value="2" onclick="m3(), clicar()">CA-0003</p>
+            <p value="3" onclick="m4(), clicar()">CA-0004</p>
+            <p value="4" onclick="m5(), clicar()">HV-1001</p>
+            <p value="5" onclick="m6(), clicar()">HV-1002</p>
+            <p value="6" onclick="m7(), clicar()">GT-2001</p>
+            <p value="7" onclick="m8(), clicar()">GT-2002</p>
+            <p value="8" onclick="m9(), clicar()">GT-2003</p>
+        </div>
+
+        <div id="map">
+          
+        </div>
+        <ul class="status">
+            <li>
+                <div style="background-color: #2ecc71;"></div>
+                <p>Operando</p>
+            </li>
+            
+            <li>
+                <div style="background-color: #f1c40f"></div>
+                <p>Parado</p>
+            </li>
+
+            <li>
+                <div style="background-color: #e74c3c;"></div>
+                <p>Manutenção</p>
+            </li>
+        </ul>
+    </div>
+    
+    <footer>
+       <p> © Todos os direitos reservados</p>
+    </footer>
+
+
+   
+</body>
+
+<script src="/script.js"></script>
+<script src="/navBar.js"></script>
+
+</html>

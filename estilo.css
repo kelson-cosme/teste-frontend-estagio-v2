@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.corpo{
+    max-width: 1366px;
+    margin: auto;
+    padding: 20px;
+
+    display: flex;
+}
+#opcoes{
+    text-align: center;
+}
+#opcoes p{
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+#opcoes p:hover{
+    background-color: #54A2DE;
+    color: #ffff;
+    border-radius: 20px;
+}
+
+#map{
+    width: 80%;
+    height: 400px;
+    margin: 0 20px;
+}
+.status{
+    width: 10%;
+    right: 0;
+    top: 0;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: flex;
+    margin-bottom: 10px;
+}
+li div{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+#estado{
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+footer{
+    margin-top: 80px;
+    background-color: #003380;
+    text-align: center;
+    color: #ffff;
+
+    font-size: 20px;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .corpo{
+        display: block;
+    }
+    .status{
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .opcoes{
+        position: fixed;
+        top: 35px;
+        left: 0;
+        width: 40%;
+        height: 100%;
+
+        z-index: 9999;
+        background-color: #00030967;
+        padding: 35px;
+        /* display: none */
+        color: #ffff;
+
+        transition: .5s;
+        transform: translateX(-100%);
+    }
+    #menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        z-index: 999;
+    }
+    #menu div{
+        width: 40px;
+        height: 5px;
+        margin: 5px;
+        background-color: black;
+        border-radius: 20px;
+        margin: 5;
+    }
+    .active{
+        transform: translateX(0);
+    }
+    #map{
+        width: 90%;
+        margin: auto;
+    }
+}
